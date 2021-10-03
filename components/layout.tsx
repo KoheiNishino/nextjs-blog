@@ -1,5 +1,7 @@
-import Footer from './footer'
 import Meta from './meta'
+import Container from './container'
+import Header from './header'
+import Footer from './footer'
 
 type Props = {
   children: React.ReactNode
@@ -10,9 +12,12 @@ const Layout = ({ children }: Props) => {
     <>
       <Meta />
       <div className="min-h-screen">
-        <main>{children}</main>
+        <Container>
+          <Header />
+          <main>{children}</main>
+          <Footer />
+        </Container>
       </div>
-      <Footer />
     </>
   )
 }
