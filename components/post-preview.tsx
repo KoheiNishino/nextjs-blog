@@ -22,8 +22,8 @@ const PostPreview = ({
             <img src={coverImage} alt={title} className="object-contain h-32 w-32" />
           </div>
           <div className="pl-5">
-            <h3 className="text-3xl mb-2">{title}</h3>
-            <div className="text-lg mb-2">
+            <h3 className="text-xl md:text-3xl mb-2">{title}</h3>
+            <div className="text-sm md:text-lg mb-2">
               <DateFormatter dateString={date} />
             </div>
           </div>
