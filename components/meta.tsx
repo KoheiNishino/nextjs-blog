@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { BLOG_TITLE, BLOG_DESCRIPTION, BLOG_URL, HOME_OG_IMAGE_URL } from '../lib/constants'
+import { BLOG_TITLE, BLOG_DESCRIPTION, BLOG_URL } from '../lib/constants'
 
 const Meta = () => {
   return (
@@ -11,7 +11,7 @@ const Meta = () => {
       <meta property="og:title" content={BLOG_TITLE} />
       <meta property="og:description" content={BLOG_DESCRIPTION} />
       <meta property="og:site_name" content={BLOG_TITLE} />
-      <meta property="og:image" content={HOME_OG_IMAGE_URL} />
+      <meta property="og:image" content={`${BLOG_URL}assets/og-image.jpeg`} />
       <meta name="msapplication-TileColor" content="#000" />
       <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
       <meta name="theme-color" content="#000" />
