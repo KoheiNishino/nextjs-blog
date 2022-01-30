@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="border-t border-accent-2 py-7 text-gray-400">
+    <footer className="text-secondary border-t border-solid border-opacity-10 py-7">
       <div className="flex flex-col items-center">
         <div className="text-sm md:text-lg">
           © {new Date().getFullYear()} Kohei Nishino
