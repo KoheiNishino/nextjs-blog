@@ -1,4 +1,4 @@
-export const GA_ID = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID || ''
+export const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_ID || ''
 
 type ClickEvent = {
   action: 'click'
@@ -16,7 +16,7 @@ export const event = ({action, category, label}: Event) => {
 }
 
 export const pageview = (path: string) => {
-  window.gtag('config', GA_ID, {
+  window.gtag('config', GA_TRACKING_ID, {
     page_path: path,
   })
 }
