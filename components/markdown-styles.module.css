@@ -20,3 +20,7 @@
 .markdown a {
   @apply text-link hover:underline;
 }
+
+.markdown p {
+  @apply whitespace-pre-wrap
+}
