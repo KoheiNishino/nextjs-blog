@@ -845,10 +845,10 @@ nanoid@^3.1.30, nanoid@^3.2.0:
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.1.tgz#6347a18cac88af88f58af0b3594b723d5e99bb35"
   integrity sha512-n6Vs/3KGyxPQd6uO0eH4Bv0ojGSUvuLlIHtC3Y0kEO23YRge8H9x1GCzLn28YX0H66pMkxuaeESFq4tKISKwdw==
 
-next-sitemap@^2.4.5:
-  version "2.4.5"
-  resolved "https://registry.yarnpkg.com/next-sitemap/-/next-sitemap-2.4.5.tgz#51aa1dad4af3d8084d698af2ef7d6b321b1befbc"
-  integrity sha512-wfDpK8STTR66dWptdhVFBqsI1+2w82CtchI9jsxm2D+8yWFnDDnuobh6tTFiaWyX9VQFmsVJAyfBvKytO4h5AA==
+next-sitemap@^2.4.6:
+  version "2.4.6"
+  resolved "https://registry.yarnpkg.com/next-sitemap/-/next-sitemap-2.4.6.tgz#a92cbbfafca3884867fc0158a768597ff992d160"
+  integrity sha512-xfQbpmJF96NUgIxlOitfDyRngZB24avaWIzDOSVosEpUV2SdMNsRuAm0IeSVdYpYSI1PZ6LldvT9Xnumpc016Q==
   dependencies:
     "@corex/deepmerge" "^2.6.148"
     minimist "^1.2.5"
