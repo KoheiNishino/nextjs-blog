@@ -1,4 +1,5 @@
-import Link from "next/link"
+import Link from 'next/link'
+import { BLOG_RELEASE_YEAR } from '../lib/constants'
 
 const Footer = () => {
   return (
@@ -10,7 +11,7 @@ const Footer = () => {
           </Link>
         </div>
         <div className="text-sm md:text-lg pb-5">
-          © {new Date().getFullYear()} Kohei Nishino
+          ©  {BLOG_RELEASE_YEAR} Kohei Nishino
         </div>
       </div>
     </footer>
