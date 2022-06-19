@@ -1,7 +1,7 @@
-import Meta from './meta'
 import Container from './container'
-import Header from './header'
 import Footer from './footer'
+import Header from './header'
+import Meta from './meta'
 
 type Props = {
   children: React.ReactNode
