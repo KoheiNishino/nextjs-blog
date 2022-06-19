@@ -1,6 +1,6 @@
-import MoreStories from '../components/more-stories'
-import { getAllPosts } from '../lib/api'
-import Post from '../types/post'
+import MoreStories from '@/components/more-stories'
+import { getAllPosts } from '@/lib/api'
+import Post from '@/types/post'
 
 type Props = {
   allPosts: Post[]
