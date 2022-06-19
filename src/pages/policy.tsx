@@ -1,13 +1,13 @@
 import ErrorPage from 'next/error'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import DateFormatter from '../components/date-formatter'
-import PostBody from '../components/post-body'
-import PostTitle from '../components/post-title'
-import { BLOG_TITLE } from '../lib/constants'
-import markdownToHtml from '../lib/markdownToHtml'
-import { getPageBySlug } from '../lib/pages'
-import PostType from '../types/post'
+import DateFormatter from '@/components/date-formatter'
+import PostBody from '@/components/post-body'
+import PostTitle from '@/components/post-title'
+import { BLOG_TITLE } from '@/lib/constants'
+import markdownToHtml from '@/lib/markdownToHtml'
+import { getPageBySlug } from '@/lib/pages'
+import PostType from '@/types/post'
 
 type Props = {
   post: PostType

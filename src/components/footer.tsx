@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { BLOG_RELEASE_YEAR } from '../lib/constants'
+import { BLOG_RELEASE_YEAR } from '@/lib/constants'
 
 const Footer = () => {
   return (
