@@ -1,6 +1,7 @@
 import ErrorPage from 'next/error'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
+
 import PostBody from '@/components/post-body'
 import PostHeader from '@/components/post-header'
 import PostTitle from '@/components/post-title'
@@ -19,25 +20,25 @@ const Post = ({ post }: Props) => {
     return <ErrorPage statusCode={404} />
   }
   return (
-      <>
-        {router.isFallback ? (
-          <PostTitle>Loading…</PostTitle>
-        ) : (
-          <>
-            <article className="mb-16">
-              <Head>
-                <title>{post.title} | {BLOG_TITLE}</title>
-              </Head>
-              <PostHeader
-                title={post.title}
-                coverImage={post.coverImage}
-                date={post.date}
-              />
-              <PostBody content={post.content} />
-            </article>
-          </>
-        )}
-      </>
+    <>
+      {router.isFallback ? (
+        <PostTitle>Loading…</PostTitle>
+      ) : (
+        <article className="mb-16">
+          <Head>
+            <title>
+              {post.title} | {BLOG_TITLE}
+            </title>
+          </Head>
+          <PostHeader
+            title={post.title}
+            coverImage={post.coverImage}
+            date={post.date}
+          />
+          <PostBody content={post.content} />
+        </article>
+      )}
+    </>
   )
 }
 
@@ -73,13 +74,11 @@ export async function getStaticPaths() {
   const posts = getAllPosts(['slug'])
 
   return {
-    paths: posts.map((post) => {
-      return {
-        params: {
-          slug: post.slug,
-        },
-      }
-    }),
+    paths: posts.map((post) => ({
+      params: {
+        slug: post.slug,
+      },
+    })),
     fallback: false,
   }
 }

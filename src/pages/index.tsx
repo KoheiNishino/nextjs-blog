@@ -6,23 +6,14 @@ type Props = {
   allPosts: Post[]
 }
 
-const Index = ({ allPosts }: Props) => {
-  return (
-    <>
-      {allPosts.length > 0 && <MoreStories posts={allPosts} />}
-    </>
-  )
-}
+const Index = ({ allPosts }: Props) => (
+  <>{allPosts.length > 0 && <MoreStories posts={allPosts} />}</>
+)
 
 export default Index
 
 export const getStaticProps = async () => {
-  const allPosts = getAllPosts([
-    'title',
-    'date',
-    'slug',
-    'coverImage',
-  ])
+  const allPosts = getAllPosts(['title', 'date', 'slug', 'coverImage'])
 
   return {
     props: { allPosts },

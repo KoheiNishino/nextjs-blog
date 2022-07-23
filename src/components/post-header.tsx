@@ -8,18 +8,16 @@ type Props = {
   date: string
 }
 
-const PostHeader = ({ title, coverImage, date }: Props) => {
-  return (
-    <>
-        <div className="text-secondary mb-6 text-lg">
-          <DateFormatter dateString={date} />
-        </div>
-        <PostTitle>{title}</PostTitle>
-        <div className="mb-8 md:mb-16 sm:mx-0">
-          <CoverImage title={title} src={coverImage} />
-        </div>
-    </>
-  )
-}
+const PostHeader = ({ title, coverImage, date }: Props) => (
+  <>
+    <div className="text-secondary mb-6 text-lg">
+      <DateFormatter dateString={date} />
+    </div>
+    <PostTitle>{title}</PostTitle>
+    <div className="mb-7 md:mb-14 sm:mx-0 w-full h-48 md:h-96 relative">
+      <CoverImage title={title} src={coverImage} />
+    </div>
+  </>
+)
 
 export default PostHeader
