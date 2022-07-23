@@ -3,9 +3,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'link': '#1d9bf0',
-        'primary': '#ffffff',
-        'secondary': '#B3B3B3',
+        link: '#1d9bf0',
+        primary: '#ffffff',
+        secondary: '#B3B3B3',
       },
       spacing: {
         28: '7rem',

@@ -1,6 +1,7 @@
 import ErrorPage from 'next/error'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
+
 import DateFormatter from '@/components/date-formatter'
 import PostBody from '@/components/post-body'
 import PostTitle from '@/components/post-title'
@@ -23,18 +24,18 @@ const Policy = ({ post }: Props) => {
       {router.isFallback ? (
         <PostTitle>Loading…</PostTitle>
       ) : (
-        <>
-          <article className="mb-16">
-            <Head>
-              <title>{post.title} | {BLOG_TITLE}</title>
-            </Head>
-            <div className="text-secondary mb-6 text-lg">
-              <DateFormatter dateString={post.date} />
-            </div>
-            <PostTitle>{post.title}</PostTitle>
-            <PostBody content={post.content} />
-          </article>
-        </>
+        <article className="mb-16">
+          <Head>
+            <title>
+              {post.title} | {BLOG_TITLE}
+            </title>
+          </Head>
+          <div className="text-secondary mb-6 text-lg">
+            <DateFormatter dateString={post.date} />
+          </div>
+          <PostTitle>{post.title}</PostTitle>
+          <PostBody content={post.content} />
+        </article>
       )}
     </>
   )

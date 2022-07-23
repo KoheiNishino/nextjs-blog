@@ -1,21 +1,21 @@
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
-import { pageview } from '../lib/gtag'
+
+import { GA_TRACKING_ID, pageview } from '../lib/gtag'
 
 export default function usePageView() {
-  if (process.env.NODE_ENV !== 'production') {
-    return
-  }
-
   const router = useRouter()
 
   useEffect(() => {
+    if (!GA_TRACKING_ID) return
+
     const handleRouteChange = (path: string) => {
       pageview(path)
     }
 
     router.events.on('routeChangeComplete', handleRouteChange)
 
+    // eslint-disable-next-line consistent-return
     return () => {
       router.events.off('routeChangeComplete', handleRouteChange)
     }
