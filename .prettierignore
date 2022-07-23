@@ -5,3 +5,9 @@ coverage
 # Ignore all HTML files:
 *.html
 *.md
+
+node_modules
+**/.next/**
+**/_next/**
+**/dist/**
+**/__tmp__/**
