@@ -4,7 +4,6 @@ about: Default issue template
 title: ''
 labels: ''
 assignees: ''
-
 ---
 
 ## Summary
@@ -13,4 +12,4 @@ assignees: ''
 
 ## Reference
 
-- 
+-
