@@ -10,7 +10,7 @@ type Props = {
 const Layout = ({ children }: Props) => (
   <>
     <Meta />
-    <div className="min-h-screen">
+    <div className='min-h-screen'>
       <Container>
         <Header />
         <main>{children}</main>

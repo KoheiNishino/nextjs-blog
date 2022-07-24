@@ -24,7 +24,7 @@ const Post = ({ post }: Props) => {
       {router.isFallback ? (
         <PostTitle>Loading…</PostTitle>
       ) : (
-        <article className="mb-16">
+        <article className='mb-16'>
           <Head>
             <title>
               {post.title} | {BLOG_TITLE}
