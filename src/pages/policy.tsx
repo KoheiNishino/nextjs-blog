@@ -24,13 +24,13 @@ const Policy = ({ post }: Props) => {
       {router.isFallback ? (
         <PostTitle>Loading…</PostTitle>
       ) : (
-        <article className="mb-16">
+        <article className='mb-16'>
           <Head>
             <title>
               {post.title} | {BLOG_TITLE}
             </title>
           </Head>
-          <div className="text-secondary mb-6 text-lg">
+          <div className='text-secondary mb-6 text-lg'>
             <DateFormatter dateString={post.date} />
           </div>
           <PostTitle>{post.title}</PostTitle>
