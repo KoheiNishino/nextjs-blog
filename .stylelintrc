@@ -4,7 +4,6 @@
     "stylelint-config-recess-order",
     "stylelint-config-prettier"
   ],
-  "ignoreFiles": ["**/node_modules/**"],
   "plugins": ["stylelint-order", "stylelint-scss"],
   "rules": {
     "at-rule-no-unknown": [
