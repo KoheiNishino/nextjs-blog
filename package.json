@@ -59,7 +59,7 @@
     "next-sitemap": "^2.5.28",
     "postcss": "^8.4.14",
     "prettier": "2.7.1",
-    "sass": "^1.54.0",
+    "sass": "^1.54.2",
     "stylelint": "^14.9.1",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-prettier-scss": "^0.0.1",
