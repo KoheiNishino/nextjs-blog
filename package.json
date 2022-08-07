@@ -7,7 +7,7 @@
     "analyze": "ANALYZE=true next build",
     "check": "tsc && prettier --list-different . && npm run lint:js && npm run lint:css && npm run test",
     "lint:css": "stylelint '**/*.{css,scss}'",
-    "lint:js": "next lint --file '**/*.@(js|ts|tsx)'",
+    "lint:js": "next lint --dir . --file '**/*.@(js|ts|tsx)'",
     "format": "prettier --write . && npm run lint:js -- --fix && npm run lint:css -- --fix",
     "test": "jest",
     "postbuild": "next-sitemap",
