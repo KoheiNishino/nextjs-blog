@@ -20,17 +20,15 @@ const CoverImage = ({ title, src, slug }: Props) => {
       })}
     />
   )
-  return (
-    <>
-      {slug ? (
-        <Link as={`/posts/${slug}`} href='/posts/[slug]'>
-          <a aria-label={title}>{image}</a>
-        </Link>
-      ) : (
-        image
-      )}
-    </>
-  )
+  return <>
+    {slug ? (
+      <Link as={`/posts/${slug}`} href='/posts/[slug]' aria-label={title}>
+        {image}
+      </Link>
+    ) : (
+      image
+    )}
+  </>;
 }
 
 export default CoverImage
