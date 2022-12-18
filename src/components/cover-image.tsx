@@ -13,22 +13,23 @@ const CoverImage = ({ title, src, slug }: Props) => {
     <Image
       src={src}
       alt={`Cover Image for ${title}`}
-      layout='fill'
-      objectFit='contain'
-      className={cn('shadow-small', {
+      fill
+      className={cn('object-contain', 'shadow-small', {
         'hover:shadow-medium transition-shadow duration-200': slug,
       })}
     />
   )
-  return <>
-    {slug ? (
-      <Link as={`/posts/${slug}`} href='/posts/[slug]' aria-label={title}>
-        {image}
-      </Link>
-    ) : (
-      image
-    )}
-  </>;
+  return (
+    <>
+      {slug ? (
+        <Link as={`/posts/${slug}`} href='/posts/[slug]' aria-label={title}>
+          {image}
+        </Link>
+      ) : (
+        image
+      )}
+    </>
+  )
 }
 
 export default CoverImage

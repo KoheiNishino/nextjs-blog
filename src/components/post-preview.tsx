@@ -11,8 +11,7 @@ type Props = {
 }
 
 const PostPreview = ({ title, coverImage, date, slug }: Props) => (
-  (<Link as={`/posts/${slug}`} href='/posts/[slug]'>
-
+  <Link as={`/posts/${slug}`} href='/posts/[slug]'>
     <div className='flex border-t border-solid border-opacity-10 py-4'>
       <Image
         src={coverImage}
@@ -28,8 +27,7 @@ const PostPreview = ({ title, coverImage, date, slug }: Props) => (
         </div>
       </div>
     </div>
-
-  </Link>)
+  </Link>
 )
 
 export default PostPreview
