@@ -7,17 +7,15 @@ type Props = {
 
 const MoreStories = ({ posts }: Props) => (
   <section>
-    <div className='mb-16'>
-      {posts.map((post) => (
-        <PostPreview
-          key={post.slug}
-          title={post.title}
-          coverImage={post.coverImage}
-          date={post.date}
-          slug={post.slug}
-        />
-      ))}
-    </div>
+    {posts.map((post) => (
+      <PostPreview
+        key={post.slug}
+        title={post.title}
+        coverImage={post.coverImage}
+        date={post.date}
+        slug={post.slug}
+      />
+    ))}
   </section>
 )
 
