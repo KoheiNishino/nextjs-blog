@@ -12,7 +12,7 @@ type Props = {
 
 const PostPreview = ({ title, coverImage, date, slug }: Props) => (
   <Link as={`/posts/${slug}`} href='/posts/[slug]'>
-    <div className='flex border-t border-solid border-opacity-10 py-4'>
+    <div className='flex border-t border-solid border-opacity-10 py-6 md:py-10'>
       <Image
         src={coverImage}
         alt={title}
